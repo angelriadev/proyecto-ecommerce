@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/*contenedor que posee todos los elementos*/
+.container__all {
+  position: relative;
+  right: 0;
+  transition: all 300ms;
+}
+
+/*cabecera , contiene la barra de menu*/
+header {
+  width: 100%;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+
+  transition: all 300ms;
+  background: rgb(12, 94, 215);
+}
+
+.move_content {
+  right: 180px;
+}
+/*contenedor menu*/
+.container__header {
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+header .logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*logo del menu*/
+.logo img {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.container__nav {
+  position: relative;
+  height: 100%;
+}
+
+nav {
+  height: 100%;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0px 20px;
+  list-style: none;
+  font-weight: bold;
+}
+/*listado de la barra menu*/
+nav ul li a {
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/*interaccion de los botones del menu*/
+nav ul li a:hover {
+  transform: scale(2);
+  color: rgb(12, 94, 215);
+  background: rgb(255, 255, 255);
+  border: 15px solid white;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+/*ingresar*/
+.select {
+  background: transparent;
+  padding: 10px 30px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/*interaccion ingresar*/
+.select:hover {
+  background: white;
+  color: rgb(12, 94, 215);
+  transform: scale(1.1);
+  border: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+/*menu anclado*/
+.nav_mod {
+  height: 70px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  background: rgb(12, 94, 215);
+}
+/*boton menu responsive*/
+.btn__menu {
+  width: 55px;
+  height: 55px;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background 300ms;
+  display: none;
+  color: white;
+}
+/*interaccion boton menu responsive*/
+.btn__menu:hover {
+  background: white;
+  color: rgb(12, 94, 215);
+}
+
+/*COVER*/
+
+.cover {
+  width: 100%;
+  padding-bottom: 60px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 100px;
+}
+
+.container__cover {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  background-size: cover;
+}
+
+.cover .container__info {
+  max-width: 400px;
+  margin-top: 40px;
+  z-index: 2;
+}
+/*que es philips?*/
+.cover h1 {
+  max-width: 400px;
+  font-size: 50px;
+  font-weight: 900;
+  color: #373737;
+}
+
+/*conocemos*/
+.cover h2 {
+  font-size: 50px;
+  font-weight: 900;
+  color: rgb(12, 94, 215);
+  margin-top: -30px;
+}
+
+/*texto del parrafo*/
+.cover p {
+  margin-top: 10px;
+  color: #373737;
+}
+
+/*boton principal*/
+.cover input[type="button"] {
+  padding: 10px 40px;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  background: rgb(12, 94, 215);
+  border-radius: 20px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*INTERACCION BOTON REGISTRATE*/
+.cover input[type="button"]:hover {
+  transform: scale(1.1);
+}
+
+/*contenedor de la imagen*/
+.container__vector {
+  position: relative;
+  transition: 0.3s;
+}
+
+/*imagen principal*/
+.container__vector img {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  width: 600px;
+  transition: all 300ms;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+/*interaccion imagen principal*/
+.container__vector img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+}
+
+/*imagen principal responsive*/
+@media screen and (max-width: 920px) {
+  .container__vector img {
+    width: 200px;
+  }
+}
+
+/*menu responsivo : vertical*/
+@media screen and (max-width: 760px) {
+  .container__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn__menu {
+    display: flex;
+  }
+  /*menu vertical*/
+  nav {
+    height: 100%;
+    background: rgb(12, 94, 215);
+    position: fixed;
+    top: 0;
+    right: -180px;
+    padding: 0 40px;
+    transition: all 300ms;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+  }
+
+  .move_nav {
+    right: 0px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 20px 0px;
+  }
+
+  .container__vector img {
+    transform: scale(0);
+    animation: none;
+  }
+}
+
+/****************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/*AQUI COMIENZA EL FOOTER*/
+
+footer {
+  width: 100%;
+  padding: 50px 0px;
+  font-family: "Nunito", sans-serif;
+  backdrop-filter: blur(5px);
+  background-color: rgb(12, 94, 215);
+  background-size: cover;
+}
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 100px;
+  background: rgb(65, 154, 243);
+  border-radius: 20px;
+}
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+/*logo philips*/
+.box__footer .logo img {
+  width: 180px;
+}
+
+/*terminos de garantia*/
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: white;
+  font-size: 18px;
+}
+
+/*titulos*/
+.box__footer h2 {
+  margin-bottom: 30px;
+  color: rgb(12, 77, 175);
+  font-weight: 700;
+}
+/* contenido debajo de los titulos*/
+.box__footer a {
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+/*interaccion de los titulos*/
+.box__footer a:hover {
+  transform: scale(1.2);
+}
+
+.box__footer a .fab {
+  font-size: 20px;
+}
+/*derechos reservados*/
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+/*texto derechos reservados*/
+.box__copyright p {
+  margin-top: 20px;
+  color: white;
+}
